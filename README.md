@@ -3,7 +3,7 @@ Game Super Trunfo React App
 
 Requirements
 
-[ ] Cards Layout;
+[ x ] Cards Layout;
 
 [ ]Cards;
  -   Attributes;
@@ -16,6 +16,8 @@ Requirements
 [ ] Play Button (Will sort the opponent card);
 
 [ ] Compare chosen attribute;
+
+[x] Update Score;
 
 [ ] Define the winner of the round; 
 
