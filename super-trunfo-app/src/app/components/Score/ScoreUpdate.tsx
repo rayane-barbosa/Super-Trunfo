@@ -6,7 +6,7 @@ interface IScoreUpdateProps {
   score: number;
 }
 
-export const ScoreUpdate = ({ score }: IScoreUpdateProps) => {
+export const ScoreUpdate = ({ score }: IScoreUpdateProps): React.ReactNode  => {
   const [playerScore, setPlayerScore] = useState(0);
   const [botScore, setBotScore] = useState(0);
 
@@ -15,9 +15,10 @@ export const ScoreUpdate = ({ score }: IScoreUpdateProps) => {
       setPlayerScore(playerScore + 1);
     } else if (winner.bot === true) {
       setBotScore(botScore + 1);
-    } else {
+    } else {     
       console.log("Tied");
     }
+    
 
     return (
       <>
@@ -28,4 +29,5 @@ export const ScoreUpdate = ({ score }: IScoreUpdateProps) => {
       </>
     );
   };
+  return handleUpdate({ });
 };
